@@ -67,11 +67,11 @@ const Products_List = () => {
   }, [filtered, page])
 
   
-  useEffect(() => {
+  useEffect(()=>{
     setPage(1)
-  }, [query, category, sort])
-
-  // Loading state
+  },[query,category,sort])
+  
+  
   if (status === 'loading') {
     return <div className="p-4">Loading products...</div>
   }

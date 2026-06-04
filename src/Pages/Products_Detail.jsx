@@ -39,10 +39,11 @@ const Product_Detail = () => {
   if (error) {
     return <div className="p-4 text-red-500 font-medium">{error}</div>
   }
-
+    
   if (!product) {
     return <div className="p-4 text-gray-500">No product found</div>
   }
+
 
   return (
     <div className="p-8 bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen">
